@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+    <hackathonayush.mentor.Model.MentorBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_marginRight="@dimen/margin_30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="@drawable/curved_drawable_layout"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:padding="@dimen/margin_10dp"
+                android:src="@drawable/home" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_weight="5"
+                android:drawableLeft="@drawable/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_10dp"
+                android:src="@drawable/home" />
+
+            <hackathonayush.mentor.Model.MentorEditText
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/margin_5dp"
+                android:textSize="@dimen/textSize_20" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center"
+                    android:padding="@dimen/margin_10dp"
+                    android:src="@drawable/home" />
+
+
+                <hackathonayush.mentor.Model.MentorEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_5dp"
+                    android:textSize="@dimen/textSize_20" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <hackathonayush.mentor.Model.MentorButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_30dp"
+            android:background="@drawable/button_layout"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_10dp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize_25" />
+
+        <hackathonayush.mentor.Model.MentorBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:layout_marginLeft="@dimen/margin_30dp"
+            android:layout_marginRight="@dimen/margin_30dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_5dp"
+            android:paddingBottom="@dimen/margin_30dp"
+            android:text="Create Accout"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize_20" />
+    </LinearLayout>
+</ScrollView>
