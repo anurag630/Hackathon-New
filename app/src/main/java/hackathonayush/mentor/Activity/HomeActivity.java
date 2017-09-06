@@ -90,44 +90,46 @@ public class HomeActivity extends MentorToolbarCustomise {
 
     }
 
-    @OnClick(R.id.subscription)
-    public void subscribe() {
-        title = getToolbarTitle(R.id.subscription);
+    @OnClick(R.id.members)
+    public void members() {
+        title = getToolbarTitle(R.id.members);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
-        changeTintColor(R.id.subscription);
+        changeTintColor(R.id.members);
         closeDrawer();
         replaceFragment(LoginFragment.getNewInstance(),false,R.id.container);
 
     }
 
-    @OnClick(R.id.wallet)
-    public void wallet() {
+    @OnClick(R.id.invites)
+    public void invites() {
         replaceFragment(new GetMentorFragment(),false,R.id.container);
-        title = getToolbarTitle(R.id.wallet);
+        title = getToolbarTitle(R.id.invites);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
-        changeTintColor(R.id.wallet);
+        changeTintColor(R.id.invites);
         closeDrawer();
     }
 
-    @OnClick(R.id.chat)
-    public void chat() {
-        title = getToolbarTitle(R.id.chat);
+//    @OnClick(R.id.notification)
+//    public void notification() {
+//        title = getToolbarTitle(R.id.notification);
+//        restoreViewsColor(R.id.linear_lout);
+//        setToolbarTitle();
+//        changeTintColor(R.id.notification);
+//        closeDrawer();
+//    }
+
+    @OnClick(R.id.share)
+    public void share() {
+        title = getToolbarTitle(R.id.share);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
-        changeTintColor(R.id.chat);
+        changeTintColor(R.id.share);
         closeDrawer();
     }
 
-    @OnClick(R.id.subscribe_now)
-    public void subscribeNow() {
-        title = getToolbarTitle(R.id.subscribe_now);
-        restoreViewsColor(R.id.linear_lout);
-        setToolbarTitle();
-        changeTintColor(R.id.subscribe_now);
-        closeDrawer();
-    }
+
 
 
     @OnClick(R.id.logout)
