@@ -38,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:drawableLeft="@drawable/home"
+            android:drawableLeft="@drawable/mentor"
             android:gravity="center"
             app:ms_dropdown_max_height="50dp" />
 
@@ -62,6 +62,7 @@
             android:tint="@color/white" />
 
         <hackathonayush.mentor.Model.MentorEditText
+            android:id="@+id/emailEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"
@@ -94,6 +95,7 @@
 
 
         <hackathonayush.mentor.Model.MentorEditText
+            android:id="@+id/pawdEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"

@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import hackathonayush.mentor.Fragments.ForumFragment;
 import hackathonayush.mentor.Fragments.LoginFragment;
 import hackathonayush.mentor.R;
 
@@ -12,7 +13,8 @@ public class LoginActivity extends MentorSingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-        return LoginFragment.getNewInstance();
+//        return LoginFragment.getNewInstance();
+        return new ForumFragment();
     }
 
     @Override
