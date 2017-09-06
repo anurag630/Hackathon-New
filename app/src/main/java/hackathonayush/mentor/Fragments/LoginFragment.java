@@ -41,7 +41,7 @@ public class LoginFragment extends MentorFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         MaterialSpinner materialSpinner = (MaterialSpinner) view.findViewById(R.id.spinner);
-        materialSpinner.setBackgroundColor( Color.TRANSPARENT);
+        materialSpinner.setBackgroundColor(Color.TRANSPARENT);
         materialSpinner.setTextColor(Color.WHITE);
         materialSpinner.setArrowColor(Color.WHITE);
         materialSpinner.setItems("Login As", "Mentor", "Student");
