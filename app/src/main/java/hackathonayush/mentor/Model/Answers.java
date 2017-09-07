@@ -85,7 +85,7 @@ public class Answers {
         return mentor;
     }
 
-    public class Mentor {
+    private class Mentor {
 
         @Expose
         @SerializedName("data")
@@ -97,7 +97,7 @@ public class Answers {
         }
     }
 
-    public class MentorDetails {
+    private class MentorDetails {
 
         @Expose
         @SerializedName("id")

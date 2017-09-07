@@ -141,7 +141,7 @@
             android:drawableLeft="@drawable/home"
             android:gravity="center"
             android:padding="0dp"
-            app:ms_dropdown_max_height="50dp" />
+            app:ms_dropdown_max_height="100dp" />
 
     </LinearLayout>
 
