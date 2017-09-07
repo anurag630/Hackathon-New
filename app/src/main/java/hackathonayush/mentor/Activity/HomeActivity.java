@@ -19,6 +19,7 @@ import butterknife.OnClick;
 import hackathonayush.mentor.Fragments.GetMentorFragment;
 import hackathonayush.mentor.Fragments.HomeFragment;
 import hackathonayush.mentor.Fragments.LoginFragment;
+import hackathonayush.mentor.Fragments.MessagesFragment;
 import hackathonayush.mentor.R;
 import nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout;
 import nl.psdcompany.duonavigationdrawer.widgets.DuoDrawerToggle;
@@ -47,7 +48,7 @@ public class HomeActivity extends MentorToolbarCustomise {
         ScrollView scrollView = (ScrollView) findViewById(R.id.scroll_view);
         scrollView.setVerticalScrollbarPosition(View.SCROLLBAR_POSITION_LEFT);
         mViewHolder = new ViewHolder();
-        goToFragment(HomeFragment.getNewInstance(),false,R.id.container);
+        goToFragment(MessagesFragment.getNewInstance(), false, R.id.container);
         Toolbar();
         handleDrawer();
         title = getToolbarTitle(R.id.home);
@@ -179,12 +180,12 @@ public class HomeActivity extends MentorToolbarCustomise {
                 Log.d("ayush","hex: "+hexColor);
 
                 if (hexColor.equals("#000000")) {
-                    ((TextView) view).setTextColor(getResources().getColor(R.color.app_color));
+                    ((TextView) view).setTextColor(getResources().getColor(R.color.select));
                 }
 
             }
             if (view instanceof ImageView) {
-                ((ImageView) view).setColorFilter(ContextCompat.getColor(view.getContext(), R.color.app_color));
+                ((ImageView) view).setColorFilter(ContextCompat.getColor(view.getContext(), R.color.select));
             }
         }
     }

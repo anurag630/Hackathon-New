@@ -30,6 +30,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return PAGE_COUNT;
     }
+
     @Override
     public Fragment getItem(int position) {
         return SignupFragment.getNewInstance();

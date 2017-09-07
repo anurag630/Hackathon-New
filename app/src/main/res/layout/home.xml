@@ -20,7 +20,7 @@
                 android:id="@+id/navImage"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:layout_margin="@dimen/margin_20dp"
+                android:layout_margin="@dimen/margin_10dp"
                 android:src="@drawable/model" />
 
             <hackathonayush.mentor.Model.MentorBoldTextView
@@ -37,7 +37,7 @@
 
 
         <LinearLayout
-            android:layout_marginTop="@dimen/margin_30dp"
+            android:layout_marginTop="@dimen/margin_10dp"
             android:id="@+id/linear_lout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

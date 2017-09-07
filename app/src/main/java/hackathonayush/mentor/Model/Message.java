@@ -1,4 +1,4 @@
-package com.a2doodh.a2doodhapp.model;
+package hackathonayush.mentor.Model;
 
 /**
  * Created by user on 27-Aug-17.
@@ -7,7 +7,7 @@ package com.a2doodh.a2doodhapp.model;
 public class Message {
 
     public String message, sender;
-   public String time;
+    public String time;
 
     public Message() {
     }
