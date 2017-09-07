@@ -59,7 +59,7 @@ public class AllQuestions {
         return student;
     }
 
-    public class Student {
+    private class Student {
 
         @Expose
         @SerializedName("data")

@@ -1,5 +1,7 @@
 package hackathonayush.mentor.Activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -69,6 +71,13 @@ public class HomeActivity extends MentorToolbarCustomise {
                 R.string.navigation_drawer_close);
         mViewHolder.mDuoDrawerLayout.setDrawerListener(duoDrawerToggle);
         duoDrawerToggle.syncState();
+    }
+
+
+    public static Intent getNewInstance(Context context) {
+        Intent intent = new Intent(context, HomeActivity.class);
+        return intent;
+
     }
 
 
