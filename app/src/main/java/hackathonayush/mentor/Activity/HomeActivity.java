@@ -19,6 +19,7 @@ import butterknife.OnClick;
 import hackathonayush.mentor.Fragments.GetMentorFragment;
 import hackathonayush.mentor.Fragments.HomeFragment;
 import hackathonayush.mentor.Fragments.LoginFragment;
+import hackathonayush.mentor.Fragments.MessagesFragment;
 import hackathonayush.mentor.R;
 import nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout;
 import nl.psdcompany.duonavigationdrawer.widgets.DuoDrawerToggle;
@@ -47,7 +48,7 @@ public class HomeActivity extends MentorToolbarCustomise {
         ScrollView scrollView = (ScrollView) findViewById(R.id.scroll_view);
         scrollView.setVerticalScrollbarPosition(View.SCROLLBAR_POSITION_LEFT);
         mViewHolder = new ViewHolder();
-        goToFragment(HomeFragment.getNewInstance(),false,R.id.container);
+        goToFragment(MessagesFragment.getNewInstance(), false, R.id.container);
         Toolbar();
         handleDrawer();
         title = getToolbarTitle(R.id.home);
@@ -90,44 +91,46 @@ public class HomeActivity extends MentorToolbarCustomise {
 
     }
 
-    @OnClick(R.id.subscription)
-    public void subscribe() {
-        title = getToolbarTitle(R.id.subscription);
+    @OnClick(R.id.members)
+    public void members() {
+        title = getToolbarTitle(R.id.members);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
-        changeTintColor(R.id.subscription);
+        changeTintColor(R.id.members);
         closeDrawer();
         replaceFragment(LoginFragment.getNewInstance(),false,R.id.container);
 
     }
 
-    @OnClick(R.id.wallet)
-    public void wallet() {
+    @OnClick(R.id.invites)
+    public void invites() {
         replaceFragment(new GetMentorFragment(),false,R.id.container);
-        title = getToolbarTitle(R.id.wallet);
+        title = getToolbarTitle(R.id.invites);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
-        changeTintColor(R.id.wallet);
+        changeTintColor(R.id.invites);
         closeDrawer();
     }
 
-    @OnClick(R.id.chat)
-    public void chat() {
-        title = getToolbarTitle(R.id.chat);
+//    @OnClick(R.id.notification)
+//    public void notification() {
+//        title = getToolbarTitle(R.id.notification);
+//        restoreViewsColor(R.id.linear_lout);
+//        setToolbarTitle();
+//        changeTintColor(R.id.notification);
+//        closeDrawer();
+//    }
+
+    @OnClick(R.id.share)
+    public void share() {
+        title = getToolbarTitle(R.id.share);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
-        changeTintColor(R.id.chat);
+        changeTintColor(R.id.share);
         closeDrawer();
     }
 
-    @OnClick(R.id.subscribe_now)
-    public void subscribeNow() {
-        title = getToolbarTitle(R.id.subscribe_now);
-        restoreViewsColor(R.id.linear_lout);
-        setToolbarTitle();
-        changeTintColor(R.id.subscribe_now);
-        closeDrawer();
-    }
+
 
 
     @OnClick(R.id.logout)
@@ -177,12 +180,12 @@ public class HomeActivity extends MentorToolbarCustomise {
                 Log.d("ayush","hex: "+hexColor);
 
                 if (hexColor.equals("#000000")) {
-                    ((TextView) view).setTextColor(getResources().getColor(R.color.app_color));
+                    ((TextView) view).setTextColor(getResources().getColor(R.color.select));
                 }
 
             }
             if (view instanceof ImageView) {
-                ((ImageView) view).setColorFilter(ContextCompat.getColor(view.getContext(), R.color.app_color));
+                ((ImageView) view).setColorFilter(ContextCompat.getColor(view.getContext(), R.color.select));
             }
         }
     }
