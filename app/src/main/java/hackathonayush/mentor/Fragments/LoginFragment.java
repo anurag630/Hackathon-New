@@ -44,7 +44,7 @@ public class LoginFragment extends MentorFragment {
         materialSpinner.setBackgroundColor(Color.TRANSPARENT);
         materialSpinner.setTextColor(Color.WHITE);
         materialSpinner.setArrowColor(Color.WHITE);
-        materialSpinner.setItems("Login As", "Mentor", "Student");
+        materialSpinner.setItems("StudentLogin As", "Mentor", "Student");
         materialSpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {

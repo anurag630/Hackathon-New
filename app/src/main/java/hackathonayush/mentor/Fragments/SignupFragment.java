@@ -33,7 +33,7 @@ public class SignupFragment extends MentorFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         MaterialSpinner materialSpinner = (MaterialSpinner) view.findViewById(R.id.spinner);
-        materialSpinner.setItems("Login As", "Mentor", "Student");
+        materialSpinner.setItems("StudentLogin As", "Mentor", "Student");
         materialSpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {
